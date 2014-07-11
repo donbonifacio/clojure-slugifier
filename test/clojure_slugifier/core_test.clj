@@ -13,3 +13,7 @@
 (deftest undercase
   (testing "makes lowercase"
     (is (= "pedro-santos" (slugify "Pedro Santos")))))
+
+(deftest undercase
+  (testing "handles uncomon chars"
+    (is (= "andre-da-conceicao" (slugify "André da Conceição")))))
