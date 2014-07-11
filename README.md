@@ -1,14 +1,10 @@
 # clojure-slugifier
 
-A Clojure library designed to ... well, that part is up to you.
+[![Clojars Project](http://clojars.org/clojure-slugifier/latest-version.svg)]
+A simple clojure librar to slugify arbitrary strings.
 
 ## Usage
 
-FIXME
-
-## License
-
-Copyright © 2014 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+``` clojure
+(slugify "André Conceição") ; => "andre-conceicao"
+```
