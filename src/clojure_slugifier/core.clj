@@ -1,14 +1,14 @@
 (ns clojure-slugifier.core)
 
-(defn spaces-for-dashes
+(defn- spaces-for-dashes
   [raw]
   (clojure.string/replace raw " " "-"))
 
-(defn lowercase
+(defn- lowercase
   [raw]
   (clojure.string/lower-case raw))
 
-(defn slugifier
+(defn- slugifier
   []
   (comp spaces-for-dashes
         lowercase))
