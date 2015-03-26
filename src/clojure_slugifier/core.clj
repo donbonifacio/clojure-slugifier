@@ -1,5 +1,5 @@
 (ns clojure-slugifier.core
-  (use [clojure.string :only (split triml replace lower-case join)]))
+  (use [clojure.string :only (split trim replace lower-case join)]))
 
 (defn- spaces-for-dashes
   [raw]
@@ -18,7 +18,7 @@
   [raw]
   (join " "
     (split
-      (triml raw) #"\s+")))
+      (trim raw) #"\s+")))
 
 (defn slugify
   "Slugifies a given string"
