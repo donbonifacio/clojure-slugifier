@@ -9,6 +9,9 @@
   (testing "dashes for spaces"
     (is (= "pedro-santos" (slugify "pedro santos"))))
 
+  (testing "strip quotes and ponctuation"
+    (is (= "pedro-santos" (slugify "pe;d:ro s.a,n\"to's"))))
+
   (testing "lower cases"
     (is (= "pedro-santos" (slugify "Pedro Santos"))))
 
