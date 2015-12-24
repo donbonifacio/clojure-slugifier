@@ -19,5 +19,5 @@
       clojure.string/lower-case
       decompose
       compact-spaces
-      (clojure.string/replace #"\.|,|;|:|'|\"" "")
-      (clojure.string/replace " " "-")))
+      (clojure.string/replace " " "-")
+      (clojure.string/replace #"[^a-z-]" "")))
