@@ -1,4 +1,4 @@
-(defproject clojure-slugifier "0.4.0"
+(defproject clojure-slugifier "0.4.1"
   :description "slugifies strings"
   :url "https://github.com/donbonifacio/clojure-slugifier"
   :license {:name "Eclipse Public License"
