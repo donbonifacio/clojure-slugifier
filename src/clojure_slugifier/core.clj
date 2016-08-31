@@ -1,4 +1,5 @@
 (ns clojure-slugifier.core
+  (:refer-clojure :exclude [replace])
   (use [clojure.string :only (split trim replace lower-case join)]))
 
 (defn- decompose
